@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62.801" height="66.686" viewBox="0 0 62.801 66.686">
+  <g id="React-icon" transform="translate(11.5 12.309)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="5.759" cy="5.759" r="5.759" transform="translate(14.142 15.275)" fill="#61dafb"/>
+    <g id="Group_6" data-name="Group 6" transform="translate(-11 -11.626)">
+      <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="30.9" cy="11.798" rx="30.9" ry="11.798" transform="translate(0 20.862)" fill="none" stroke="#61dafb" stroke-width="1"/>
+      <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="30.9" cy="11.798" rx="30.9" ry="11.798" transform="translate(25.668) rotate(60)" fill="none" stroke="#61dafb" stroke-width="1"/>
+      <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="30.9" cy="11.798" rx="30.9" ry="11.798" transform="translate(56.568 11.798) rotate(120)" fill="none" stroke="#61dafb" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
