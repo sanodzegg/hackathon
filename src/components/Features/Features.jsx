@@ -1,4 +1,5 @@
 import "./Features.css";
+import LMBox from "./InnerComponents/LMBox";
 import WhyFor from "./InnerComponents/WhyFor/WhyFor";
 
 const Features = () => {
@@ -6,6 +7,7 @@ const Features = () => {
     <section className="featuresWrapper">
         <hr />
         <WhyFor />
+        <LMBox />
     </section>
   )
 }
