@@ -50,12 +50,19 @@
         .colwr:nth-child(2)
             button
                 margin: 0 10px
+        .phoneWrapper
+            height: 480px
+            transition: all .35s linear
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
 
 .lmBoxWrapper
     padding: 40px 75px 0 75px
     border: 1px solid #ffffff40
     border-radius: 12px
-    margin-bottom: 200px
+    margin-bottom: 150px
     position: relative
 
     display: flex
@@ -83,6 +90,36 @@
         filter: grayscale(100%)
         top: 60%
         left: 0
+
+.features
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    .featureWrapper
+        max-width: 340px
+        margin: 0 50px
+        .imgWrapper
+            width: 340px
+            height: 370px
+            img
+                width: 100%
+                height: 100%
+                object-fit: contain
+                filter: drop-shadow(0 0 100px #a856f045)
+        h3
+            margin-top: 20px
+            font-size: 28px
+            font-weight: 500
+            line-height: 1.43em
+            text-align: center
+            color: #f5f5f5
+        p
+            text-align: center
+            margin-top: 40px
+            font-size: 16px
+            font-weight: 400
+            color: #b5b6bb
+            line-height: 1.3em
 
 @keyframes travel
     0%

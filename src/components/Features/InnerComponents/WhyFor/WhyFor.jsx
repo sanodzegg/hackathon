@@ -1,10 +1,31 @@
 import MainButton from "components/Buttons/Main/MainButton"
 import SecondaryButton from "components/Buttons/Secondary/SecondaryButton"
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react"
 import Dots from "./Dots"
 
 const WhyFor = () => {
+  const wfRef = useRef(null);
+  const inWfRef = useInView(wfRef, { once: true });
+
+  const initial = {
+    opacity: 0,
+    scale: .7,
+    y: "50px"
+  }
+
+  const final = {
+    opacity: 1,
+    scale: 1,
+    y: 0
+  }
+
+  const transition = {
+    duration: .7,
+  }
+
   return (
-    <div className='wfWrapper'>
+    <motion.div ref={wfRef} className='wfWrapper' initial={initial} animate={inWfRef && final} transition={transition}>
         <Dots />
         <div className="col">
             <div className="colwr">
@@ -16,7 +37,7 @@ const WhyFor = () => {
                 <SecondaryButton text="More Features" />
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
