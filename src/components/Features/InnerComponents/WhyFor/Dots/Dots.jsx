@@ -1,4 +1,4 @@
-import React from 'react'
+import "./Dots.css"
 
 const Dots = () => {
   return (

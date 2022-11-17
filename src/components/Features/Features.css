@@ -11,32 +11,6 @@
 .featuresWrapper .wfWrapper {
   margin-bottom: 50px;
 }
-.featuresWrapper .dots {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
-  border-radius: 50%;
-}
-.featuresWrapper .dots .dot {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: hsla(0deg, 0%, 100%, 0.1);
-}
-.featuresWrapper .dots .traveler {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6);
-  animation: travel 1s ease-in-out infinite alternate-reverse;
-}
 .featuresWrapper .col:nth-child(2) {
   margin-top: 20px;
   display: flex;

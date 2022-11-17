@@ -2,7 +2,7 @@ import MainButton from "components/Buttons/Main/MainButton"
 import SecondaryButton from "components/Buttons/Secondary/SecondaryButton"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import Dots from "./Dots"
+import Dots from "./Dots/Dots"
 
 const WhyFor = () => {
   const wfRef = useRef(null);

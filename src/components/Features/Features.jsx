@@ -7,7 +7,6 @@ import Feature from "./InnerComponents/Feature";
 import uniqueId from "lodash.uniqueid";
 
 const Features = () => {
-  console.log(features);
   return (
     <section className="featuresWrapper">
         <hr />
