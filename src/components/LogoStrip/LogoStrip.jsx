@@ -14,7 +14,7 @@ const LogoStrip = () => {
         transition={{ delay: .5 }}>
             <div className="cover"></div>
             <div className="logos">
-                {[...data, ...data, ...data].map(e => <img key={uniqueId()} src={e.src} alt={e.alt} />)}
+                {[...data, ...data, ...data].map(e => <img style={{ width: "65px" }} key={uniqueId()} src={e.src} alt={e.alt} />)}
             </div>
         </motion.div>
     )

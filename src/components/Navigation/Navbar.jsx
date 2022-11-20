@@ -1,28 +1,29 @@
+import { useEffect, useState } from "react"
+import FullNav from "./1080/FullNav"
 import "./Navbar.css"
-import { ReactComponent as Logo } from "assets/icons/logo.svg";
-import MainButton from "components/Buttons/Main/MainButton";
-import { motion } from "framer-motion";
+import BurgerNav from "./Tablet/BurgerNav";
+
 
 
 const Navbar = () => {
+    const [vwType, setVWType] = useState(null); // 0 pc 1 mobile
+
+
+    const handleResize = () => {
+        const vw = window.innerWidth;
+        if(vw < 810) setVWType(1);
+        else setVWType(0);
+    }
+
+    useEffect(() => {
+        handleResize();
+    }, []);
+
+    window.addEventListener("resize", handleResize)
 
     return (
         <div className="navWrapper">
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .5 }}>
-                <nav>
-                    <div className="logo">
-                        <Logo />
-                        <h1>CHAMP</h1>
-                    </div>
-                    <ul>
-                        <li>About</li>
-                        <li>Platforms</li>
-                        <li>Features</li>
-                        <li>Help</li>
-                    </ul>
-                    <MainButton text="Get CHAMP" />
-                </nav>
-            </motion.div>
+            { vwType !== null && vwType === 0 ? <FullNav /> : <BurgerNav /> }
         </div>
     )
 }

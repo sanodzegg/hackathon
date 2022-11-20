@@ -19,7 +19,6 @@
   align-items: center;
   -webkit-animation: slide 15s linear infinite;
           animation: slide 15s linear infinite;
-  filter: grayscale(100%);
 }
 
 @-webkit-keyframes slide {

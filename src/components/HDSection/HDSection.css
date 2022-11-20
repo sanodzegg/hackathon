@@ -1,11 +1,27 @@
 .HDSectionWrapper {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 100px auto 25px auto;
+  padding: 0 20px;
 }
 .HDSectionWrapper .HDHeaderWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1170px) {
+  .HDSectionWrapper .HDHeaderWrapper {
+    flex-direction: column;
+  }
+  .HDSectionWrapper .HDHeaderWrapper .col {
+    width: 93%;
+  }
+  .HDSectionWrapper .HDHeaderWrapper h3, .HDSectionWrapper .HDHeaderWrapper p {
+    text-align: center !important;
+    max-width: unset !important;
+  }
+  .HDSectionWrapper .HDHeaderWrapper p {
+    margin-top: 10px !important;
+  }
 }
 .HDSectionWrapper .HDHeaderWrapper h3 {
   color: #f5f5f5;
@@ -26,11 +42,21 @@
 .HDSectionWrapper .stepsParent {
   margin-top: 50px;
 }
+@media screen and (max-width: 500px) {
+  .HDSectionWrapper .stepsParent {
+    margin-top: 0;
+  }
+}
 .HDSectionWrapper .stepsParent .stepsWrapper {
   height: 140px;
   overflow: hidden;
   cursor: pointer;
   transition: height 0.3s ease;
+}
+@media screen and (max-width: 500px) {
+  .HDSectionWrapper .stepsParent .stepsWrapper {
+    height: 28vw;
+  }
 }
 .HDSectionWrapper .stepsParent .stepsWrapper:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2509803922);
@@ -50,6 +76,19 @@
   width: 60px;
   height: 60px;
   position: relative;
+  filter: grayscale(100%);
+}
+@media screen and (max-width: 500px) {
+  .HDSectionWrapper .stepsParent .stepsWrapper .row .iconWrapper {
+    width: 12vw;
+    height: 12vw;
+  }
+  .HDSectionWrapper .stepsParent .stepsWrapper .row .iconWrapper img {
+    max-width: 8vw !important;
+  }
+}
+.HDSectionWrapper .stepsParent .stepsWrapper .row .iconWrapper.active {
+  filter: grayscale(0);
 }
 .HDSectionWrapper .stepsParent .stepsWrapper .row .iconWrapper img {
   max-width: 40px;
@@ -63,8 +102,17 @@
   line-height: 1em;
   color: #f5f5f5;
 }
-.HDSectionWrapper .stepsParent .stepsWrapper p {
+@media screen and (max-width: 500px) {
+  .HDSectionWrapper .stepsParent .stepsWrapper .row h4 {
+    font-size: 4.8vw;
+  }
+}
+.HDSectionWrapper .stepsParent .stepsWrapper p, .HDSectionWrapper .stepsParent .stepsWrapper a {
   color: #b5b6bb;
   font-size: 18px;
   line-height: 1.5em;
+  text-decoration: none;
+}
+.HDSectionWrapper .stepsParent .stepsWrapper a:hover {
+  color: #7059fb;
 }/*# sourceMappingURL=HDSection.css.map */

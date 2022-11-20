@@ -17,7 +17,7 @@
 
 .navWrapper {
   width: 100%;
-  padding: 35px 0;
+  padding: 35px 20px;
 }
 .navWrapper nav {
   max-width: 1200px;
@@ -37,4 +37,9 @@
 }
 .navWrapper nav ul li:hover {
   opacity: 0.5;
+}
+.navWrapper .burgerMenuWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=Navbar.css.map */

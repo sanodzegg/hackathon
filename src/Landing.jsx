@@ -3,8 +3,9 @@ import Hero from "components/Hero/Hero";
 import LogoStrip from "components/LogoStrip/LogoStrip";
 import Features from "components/Features/Features";
 import HDSection from "components/HDSection/HDSection";
+import Footer from "components/Footer/Footer";
 
-function Landing() {
+const Landing = () => {
   return (
     <>
       <Navbar />
@@ -12,6 +13,7 @@ function Landing() {
       <LogoStrip />
       <Features />
       <HDSection />
+      <Footer />
     </>
   );
 }
